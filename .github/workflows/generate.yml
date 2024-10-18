@@ -1,0 +1,7 @@
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Table
+        run: |
+          gen.py
