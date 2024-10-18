@@ -5,7 +5,7 @@ table = [[]]
 cols = 5
 img_names = []
 for directory in dir_list:
-    if os.path.isdir(directory):
+    if os.path.isdir(directory) and os.path.isfile(directory + "/README.md"):
         f = open(directory + "/README.md", "r", encoding="utf-8")
         v = f.read()
         f.close()
